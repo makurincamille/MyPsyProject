@@ -1,4 +1,4 @@
-package controlllers;
+package com.Psy.controlllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

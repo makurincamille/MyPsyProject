@@ -1,4 +1,4 @@
-package domain;
+package com.Psy.domain;
 
 /**
  * Created by Camille on 06.08.2016.

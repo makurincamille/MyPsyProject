@@ -1,4 +1,4 @@
-package domain;
+package com.Psy.domain;
 
 import java.util.List;
 
