@@ -1,16 +1,24 @@
 package com.Psy.domain;
 
+import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by Camille on 06.08.2016.
- */
+@Entity
 public class Person {
-
+    @Id
+    @GeneratedValue
     private long personId;
+
+    @Column
     private String personFirstName;
-    private String persomLastName;
-    private List<Attribute> atributesList;
+
+    @Column
+    private String personLastName;
+
+    @OneToMany
+    private List<Attribute> attributesList;
+
+    @OneToMany
     private List<Description> descriptionList;
 
     public long getPersonId() {
@@ -29,20 +37,20 @@ public class Person {
         this.personFirstName = personFirstName;
     }
 
-    public String getPersomLastName() {
-        return persomLastName;
+    public String getPersonLastName() {
+        return personLastName;
     }
 
-    public void setPersomLastName(String persomLastName) {
-        this.persomLastName = persomLastName;
+    public void setPersonLastName(String personLastName) {
+        this.personLastName = personLastName;
     }
 
-    public List<Attribute> getAtributesList() {
-        return atributesList;
+    public List<Attribute> getAttributesList() {
+        return attributesList;
     }
 
-    public void setAtributesList(List<Attribute> atributesList) {
-        this.atributesList = atributesList;
+    public void setAttributesList(List<Attribute> attributesList) {
+        this.attributesList = attributesList;
     }
 
     public List<Description> getDescriptionList() {

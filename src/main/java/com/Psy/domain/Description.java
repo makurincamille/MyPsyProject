@@ -1,11 +1,20 @@
 package com.Psy.domain;
 
-/**
- * Created by Camille on 06.08.2016.
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Description {
+    @Id
+    @GeneratedValue
     private long descriptionId;
+
+    @Column
     private String descriptionTitle;
+
+    @Column
     private String descriptionText;
 
     public long getDescriptionId() {

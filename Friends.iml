@@ -43,5 +43,9 @@
     <orderEntry type="library" name="Maven: cglib:cglib:2.2" level="project" />
     <orderEntry type="library" name="Maven: asm:asm:3.1" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-tools:3.2.0.ga" level="project" />
+    <orderEntry type="library" name="Maven: org.beanshell:bsh:2.0b4" level="project" />
+    <orderEntry type="library" name="Maven: freemarker:freemarker:2.3.8" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:jtidy:r8-20060801" level="project" />
   </component>
 </module>

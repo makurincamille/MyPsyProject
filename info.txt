@@ -1,0 +1,25 @@
+*** FRIENDSHIP STATUS ***
+FriendshipStatus is a number form 1 to 5 which determines friendshipLevel decay with time.
+
+
+*** EVENTS ***
+ContactEvents are the events when contact with the person appeared (you met the person).
+Contact events increase (or decrease) friendshipLevel depending on event quality, duration and type.
+
+    *event types and level increase (precision is strongly required)
+        - informal chat 50 points
+        - common mutual activities (rehearsal) 100 points
+        - help event (helped the person to solve some problem) 150 points
+        - uncommon mutual activities (concert played) 200 points
+
+*** FRIENDSHIP LEVEL ***
+Initial friendshipLevel and status is set by user. Further level
+--decreases:
+ - with time from the last contact (time factor)
+ - from destructive events
+
+--increases due to  contactEvents
+
+
+*** TRANSACTIONS ***
+Transactions are small "talk" units. Transactions appear in chats.

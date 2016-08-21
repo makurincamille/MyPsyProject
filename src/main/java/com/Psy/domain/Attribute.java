@@ -1,13 +1,19 @@
 package com.Psy.domain;
 
-/**
- * Created by Camille on 06.08.2016.
- */
-public class Attribute {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
+public class Attribute {
+    @Id
+    @GeneratedValue
     private long attributeId;
+    @Column
     private String attributeName;
-    private String attributeValue;
+    @Column
+    private Object attributeValue;
 
     public long getAttributeId() {
         return attributeId;
@@ -25,7 +31,7 @@ public class Attribute {
         this.attributeName = attributeName;
     }
 
-    public String getAttributeValue() {
+    public Object getAttributeValue() {
         return attributeValue;
     }
 
